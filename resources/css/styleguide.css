@@ -1,0 +1,102 @@
+:root { 
+  --black: #000000;
+  --diesel: #0f0101;
+  --dove-gray: #707070;
+  --soft-peach: #f3efef;
+  --swiss-coffee: #dfd3d3;
+  --white: #ffffff;
+ 
+  --font-size-l: 44px;
+  --font-size-m: 28px;
+  --font-size-s: 26px;
+  --font-size-xl: 53px;
+  --font-size-xs: 15px;
+  --font-size-xxl: 62px;
+  --font-size-xxxl: 129px;
+ 
+  --font-family-mongolianbaiti-regular: "MongolianBaiti-Regular", Helvetica;
+  --font-family-segoe_ui: "Segoe UI", Helvetica;
+  --font-family-segoeui-bold: "SegoeUI-Bold", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+  --font-family-yugothic-bold: "YuGothic-Bold", Helvetica;
+  --font-family-yugothic-medium: "YuGothic-Medium", Helvetica;
+}
+.segoeui-regular-normal-black-28px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.segoeui-regular-normal-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.segoeui-regular-normal-black-62px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.segoeui-normal-black-28px {
+  color: var(--black);
+  font-family: var(--font-family-segoe_ui);
+  font-size: var(--font-size-m);
+}
+
+.segoeui-regular-normal-black-44px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.segoeui-normal-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-segoe_ui);
+  font-size: var(--font-size-s);
+}
+
+.segoeui-regular-normal-black-53px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.yugothic-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-yugothic-bold);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-regular-normal-black-30px {
+  color: var(--black);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1px-dove-gray {
+  border: 1px solid var(--dove-gray);
+}
+
+.border-1px-diesel {
+  border: 1px solid var(--diesel);
+}
+
+.border-3px-dove-gray {
+  border: 3px solid var(--dove-gray);
+}

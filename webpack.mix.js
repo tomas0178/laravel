@@ -20,6 +20,11 @@ mix
     require('autoprefixer'),
   ])
   .postCss('resources/css/pc.css', 'public/css')
+  .postCss('resources/css/globals.css', 'public/css')
+  .postCss('resources/css/menu.css', 'public/css')
+  .postCss('resources/css/phone.css', 'public/css')
+  .postCss('resources/css/styleguide.css', 'public/css')
+
 
   .sass('resources/sass/app.scss', 'public/css')
   ;

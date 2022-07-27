@@ -47,8 +47,8 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required', 
-            'description' => 'required', 
-            'image' => 'required|mimes:jpg,png,jpeg|max:5048'
+            'description' => 'required',
+            'image' => 'required|mimes:jpg,png,jpeg|max:2500'
         ]);
 
         $newImageName= uniqid(). ' -' . $request->title. '.' .
@@ -59,6 +59,8 @@ class PostsController extends Controller
         Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
+            'description1' => $request->input('description1'),
+            'description2' => $request->input('description2'),
             'slug' => SlugService::createSlug(Post::class, 'slug', 
             $request->title),
             'image_path' => $newImageName, 
@@ -117,6 +119,8 @@ class PostsController extends Controller
           ->update([
             'title' => $request->input('title'),
             'description' =>$request->input('description'),
+            'description1' =>$request->input('description1'),
+            'description2' =>$request->input('description2'),
             'slug' => SlugService::createSlug(Post::class, 'slug', 
             $request->title), 
             'image_path' => $newImageName,

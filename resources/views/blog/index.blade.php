@@ -26,18 +26,60 @@
 </div>
 @endif
 
+@php
+$postnumber = 0;
+@endphp
+
+
 @foreach($posts as $post)
 <div class="pc">
    <div class="fashion-2">
       <div class="overlap-group">
-         <div class="rectangle-6 border-1px-dove-gray"></div>
-         <div class="rectangle-2 border-1px-dove-gray"></div>
+         <div class="rectangle-6 border-1px-dove-gray">
+            @if(isset(Auth::user()->id) && Auth::user()->id ==
+            $post->user_id)
+            <span class="float-right">
+               <a href="/blog/{{$post->slug}}/edit" class="text-gray-700 italic hover:text-gray-900 pb-1 
+                  border-b-2">
+                  Edit
+               </a>
+            </span>
+            <span class="float-right">
+               <form action="/blog/{{ $post->slug }}" method="POST">
+                  @csrf
+                  @method('delete')
+
+                  <button class="text-red-500 pr-3" type="submit">
+                     Delete
+                  </button>
+               </form>
+            </span>
+            @endif
+         </div>
+         <div class="rectangle-2 border-1px-dove-gray">
+            <img calss="img" src="images\{{$post->image_path}}" halt="" height="500px" width="700px">
+         </div>
          <div class="topsbottomsshoes">
-            <span class="segoeui-regular-normal-black-62px"></span><span class="span-1 segoeui-regular-normal-black-62px">Tops<br /></span><span class="segoeui-regular-normal-black-62px">・<br /></span><span class="span-1 segoeui-regular-normal-black-62px">Bottoms<br /></span><span class="segoeui-regular-normal-black-62px">・<br /></span><span class="span-1 segoeui-regular-normal-black-62px">Shoes<br /></span><span class="segoeui-regular-normal-black-62px">・</span>
+            <span class="segoeui-regular-normal-black-62px"></span>
+            <span class="span-1 segoeui-regular-normal-black-62px">Tops<br /></span>
+            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+               {{$post->description}}
+            </p>
+            <span class="span-1 segoeui-regular-normal-black-62px">Bottoms<br /></span>
+            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+               {{$post->description1}}
+            </p>
+            <span class="span-1 segoeui-regular-normal-black-62px">Shoes<br /></span>
+            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+               {{$post->description2}}
+            </p>
          </div>
          <div class="overlap-group-1">
+            @php
+            $postnumber = $postnumber + 1;
+            @endphp
             <div class="rectangle-3-1 border-1px-diesel"></div>
-            <div class="number">1</div>
+            <div class="number">{{$postnumber}}</div>
          </div>
          <div class="title-1">{{$post->title}}</div>
       </div>
@@ -47,9 +89,9 @@
 
 
 
-@foreach($posts as $post)
+<!--@foreach($posts as $post)
 
-<div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+#<div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
    <div>
       <img src="images\{{$post->image_path}}" width="700px" halt="">
 
@@ -114,7 +156,5 @@
    </div>
 </div>
 
-
-@endforeach
-
+@endforeach-->
 @endsection

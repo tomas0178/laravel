@@ -17,11 +17,13 @@ class Posts extends Migration
              $table->increments('id');
              $table->string('slug');
              $table->string('title');
-             $table->longText('description');   
+             $table->longText('description');  
+             $table->longText('description1');   
+             $table->longText('description2');   
              $table->string('image_path');
              $table->timestamps();
              $table->unsignedBigInteger('user_id');
-             $table->foreign('user_id')->references('id')->on('users');
+             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
         });
     }
@@ -33,6 +35,12 @@ class Posts extends Migration
      */
     public function down()
     {
+        //Schema::table('posts', function (Blueprint $table) {
+           // $table->dropForeign('user_id');
+            // $table->dropColumn('user_id');
+        // });
+
         Schema::dropIfExists('posts');
+        
     }
 }

@@ -33,6 +33,6 @@ class Iinepost extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post_user');
+        Schema::dropIfExists('iinepost');
     }
 }

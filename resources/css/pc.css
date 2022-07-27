@@ -5,8 +5,6 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 6661px;
-  width: 1314px;
 }
 
 .pc .header {

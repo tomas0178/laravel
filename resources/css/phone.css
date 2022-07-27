@@ -1,0 +1,285 @@
+/* screen - phone */
+
+.phone {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2978px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.phone .header {
+  display: flex;
+  height: 84px;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.phone .search {
+  align-items: center;
+  background-color: var(--soft-peach);
+  display: flex;
+  justify-content: flex-end;
+  min-width: 92px;
+  padding: 0 28.7px;
+}
+
+.phone .group-1 {
+  align-items: flex-end;
+  display: flex;
+  height: 42px;
+  min-width: 34px;
+}
+
+.phone .overlap-group-1 {
+  height: 44px;
+  margin-bottom: -2.1px;
+  position: relative;
+  width: 37px;
+}
+
+.phone .ellipse-1 {
+  background-color: var(--soft-peach);
+  border: 3px solid var(--black);
+  border-radius: 14.5px/16px;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 29px;
+}
+
+.phone .line-2 {
+  height: 18px;
+  left: 21px;
+  object-fit: cover;
+  position: absolute;
+  top: 26px;
+  width: 15px;
+}
+
+.phone .menu {
+  align-items: flex-start;
+  background-color: var(--soft-peach);
+  cursor: pointer;
+  display: flex;
+  min-width: 89px;
+  padding: 25.3px 22.4px;
+}
+
+.phone .hamburger {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 33px;
+  width: 44px;
+}
+
+.phone .line-3 {
+  height: 3px;
+  object-fit: cover;
+  width: 44px;
+}
+
+.phone .line-5 {
+  height: 3px;
+  margin-top: 15px;
+  object-fit: cover;
+  width: 44px;
+}
+
+.phone .path-1 {
+  height: 3px;
+  margin-top: 13px;
+  object-fit: cover;
+  width: 44px;
+}
+
+.phone .top {
+  background-image: url(../img/178-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 336px;
+  margin-right: 2.0px;
+  width: 502px;
+}
+
+.phone .mens-fashion {
+  color: var(--diesel);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: 37px;
+  font-weight: 700;
+  height: 51px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 18px;
+  margin-top: 23.5px;
+  white-space: nowrap;
+  width: 245px;
+}
+
+.phone .ranking {
+  -webkit-text-stroke: 1px var(--dove-gray);
+  color: var(--diesel);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: 69px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 120px;
+  margin-bottom: -27px;
+  margin-left: 2.0px;
+  min-height: 93px;
+  min-width: 248px;
+  white-space: nowrap;
+}
+
+.phone .fashion-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-top: 58px;
+  min-height: 2260px;
+  width: 469px;
+}
+
+.phone .overlap-group1 {
+  height: 406px;
+  margin-top: -6px;
+  position: relative;
+  width: 472px;
+}
+
+.phone .rectangle-6 {
+  background-color: var(--soft-peach);
+  height: 400px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 470px;
+}
+
+.phone .rectangle-2-1 {
+  background-color: var(--swiss-coffee);
+  height: 313px;
+  left: 0;
+  position: absolute;
+  top: 93px;
+  width: 235px;
+}
+
+.phone .topsbottomsshoes-1 {
+  -webkit-text-stroke: 1px var(--dove-gray);
+  height: 315px;
+  left: 243px;
+  letter-spacing: 0;
+  line-height: 38px;
+  position: absolute;
+  top: 87px;
+  width: 229px;
+}
+
+.phone .span-1 {
+  text-decoration: underline;
+}
+
+.phone .overlap-group-2 {
+  height: 87px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 82px;
+}
+
+.phone .rectangle-3 {
+  background-color: var(--white);
+  border-radius: 49px;
+  height: 81px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 82px;
+}
+
+.phone .number {
+  -webkit-text-stroke: 1px var(--dove-gray);
+  left: 26px;
+  letter-spacing: 0;
+  line-height: 92px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.phone .fashion {
+  align-items: flex-start;
+  background-color: var(--soft-peach);
+  display: flex;
+  height: 400px;
+  margin-top: 63px;
+  min-width: 470px;
+}
+
+.phone .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: -6.06px;
+  min-height: 406px;
+  width: 235px;
+}
+
+.phone .overlap-group {
+  height: 87px;
+  margin-left: 0.09px;
+  position: relative;
+  width: 82px;
+}
+
+.phone .rectangle-2 {
+  background-color: var(--swiss-coffee);
+  height: 313px;
+  margin-top: 6px;
+  width: 235px;
+}
+
+.phone .topsbottomsshoes {
+  -webkit-text-stroke: 1px var(--dove-gray);
+  align-self: flex-end;
+  height: 315px;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-bottom: 4.53px;
+  margin-left: 7px;
+  width: 229px;
+}
+
+.phone .more {
+  align-items: flex-start;
+  background-image: url(../img/path-2-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 58px;
+  justify-content: flex-end;
+  margin-left: 0;
+  margin-top: 63px;
+  min-width: 256px;
+  padding: 8.8px 70.6px;
+}
+
+.phone .text-7 {
+  -webkit-text-stroke: 1px var(--dove-gray);
+  color: var(--diesel);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 40px;
+  min-height: 33px;
+  white-space: nowrap;
+}

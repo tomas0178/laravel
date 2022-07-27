@@ -15,6 +15,9 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('css/pc.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/styleguide.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/globals.css') }}" rel="stylesheet">
+
 
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">

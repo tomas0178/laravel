@@ -1,5 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/globals.css": "/css/globals.css",
     "/css/app.css": "/css/app.css",
-    "/css/pc.css": "/css/pc.css"
+    "/css/menu.css": "/css/menu.css",
+    "/css/pc.css": "/css/pc.css",
+    "/css/styleguide.css": "/css/styleguide.css",
+    "/css/phone.css": "/css/phone.css"
 }
